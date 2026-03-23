@@ -1,0 +1,299 @@
+/* Bharat Bank 404 Not Found Page Styles */
+
+.not-found-container {
+  min-height: calc(100vh - 5em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+  padding: 3em 5%;
+}
+
+.not-found-content {
+  max-width: 45em;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+}
+
+/* Animated 404 */
+.not-found-animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  margin-bottom: 1em;
+  user-select: none;
+}
+
+.not-found-number {
+  font-size: 8em;
+  font-weight: 800;
+  color: #1e3a8a;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  animation: bounce 2s ease-in-out infinite;
+  text-shadow: 0 0.1em 0.3em rgba(30, 58, 138, 0.2);
+}
+
+.not-found-number:first-child {
+  animation-delay: 0s;
+}
+
+.not-found-number:last-child {
+  animation-delay: 0.4s;
+}
+
+.not-found-zero {
+  width: 7em;
+  height: 7em;
+  border: 0.5em solid #2563eb;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: rotate 3s linear infinite, pulse 2s ease-in-out infinite;
+  box-shadow: 0 0.2em 1em rgba(37, 99, 235, 0.3);
+}
+
+.not-found-inner-circle {
+  width: 3em;
+  height: 3em;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite reverse;
+  box-shadow: 0 0.2em 0.8em rgba(30, 58, 138, 0.4);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-0.5em);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Title and Message */
+.not-found-title {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.not-found-message {
+  font-size: 1.15em;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  max-width: 35em;
+}
+
+/* Action Buttons */
+.not-found-action {
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.not-found-action .btn {
+  padding: 0.875em 2em;
+  font-size: 1em;
+  font-weight: 600;
+  border-radius: 0.5em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+
+.not-found-action .btn-primary {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+}
+
+.not-found-action .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(30, 58, 138, 0.4);
+}
+
+.not-found-action .btn-secondary {
+  background: #f3f4f6;
+  color: #374151;
+  border: 2px solid #d1d5db;
+}
+
+.not-found-action .btn-secondary:hover {
+  background: #e5e7eb;
+  transform: translateY(-2px);
+}
+
+.not-found-action .btn:active {
+  transform: translateY(0);
+}
+
+/* Tips Section */
+.not-found-tips {
+  background: #ffffff;
+  padding: 2em;
+  border-radius: 1em;
+  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.08);
+  margin-top: 1em;
+  text-align: left;
+  max-width: 35em;
+  width: 100%;
+}
+
+.not-found-tips h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin: 0 0 1em 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.not-found-tips ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+.not-found-tips li {
+  font-size: 1em;
+  color: #6b7280;
+  padding-left: 1.75em;
+  position: relative;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.not-found-tips li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .not-found-container {
+    padding: 2em 3%;
+    min-height: calc(100vh - 4em);
+  }
+
+  .not-found-content {
+    gap: 1.5em;
+  }
+
+  .not-found-number {
+    font-size: 5em;
+  }
+
+  .not-found-zero {
+    width: 5em;
+    height: 5em;
+    border-width: 0.4em;
+  }
+
+  .not-found-inner-circle {
+    width: 2em;
+    height: 2em;
+  }
+
+  .not-found-title {
+    font-size: 2em;
+  }
+
+  .not-found-message {
+    font-size: 1em;
+  }
+
+  .not-found-action {
+    flex-direction: column;
+    width: 100%;
+    max-width: 20em;
+  }
+
+  .not-found-action .btn {
+    width: 100%;
+  }
+
+  .not-found-tips {
+    padding: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .not-found-container {
+    padding: 1.5em 2%;
+  }
+
+  .not-found-number {
+    font-size: 4em;
+  }
+
+  .not-found-zero {
+    width: 4em;
+    height: 4em;
+    border-width: 0.35em;
+  }
+
+  .not-found-inner-circle {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .not-found-title {
+    font-size: 1.75em;
+  }
+
+  .not-found-message {
+    font-size: 0.95em;
+  }
+
+  .not-found-tips {
+    padding: 1.25em;
+  }
+
+  .not-found-tips h3 {
+    font-size: 1.1em;
+  }
+
+  .not-found-tips li {
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,27 @@
+.auth-subtext {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+
+.auth-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.auth-links p {
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+.auth-links span {
+  color: #1c2a8a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-links span:hover {
+  text-decoration: underline;
+}

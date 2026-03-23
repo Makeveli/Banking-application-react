@@ -1,0 +1,204 @@
+/* --- Global Resets for Auditor --- */
+.auditor-dashboard * {
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.auditor-dashboard {
+  max-width: 1050px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 40px 50px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  color: #1e227a;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* --- Buttons --- */
+.btn-primary {
+  background-color: #1e227a;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #1e227a;
+  border: 1px solid #d1d5db;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* --- Tabs --- */
+.tabs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 12px 24px;
+  border: 1px solid #eaeaea;
+  background: #ffffff;
+  color: #666;
+  font-weight: 600;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-btn.active {
+  background: #1e227a;
+  color: #ffffff;
+  border-color: #1e227a;
+}
+
+.tab-btn:disabled {
+  opacity: 0.5;
+  background: #f9f9f9;
+  cursor: not-allowed;
+}
+
+/* --- Overview Stat Cards --- */
+.overview-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.stat-card {
+  background: #f8f9fa;
+  padding: 40px 20px;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.stat-card h3 {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.stat-number {
+  margin: 0;
+  color: #1e227a;
+  font-size: 36px;
+  font-weight: 900;
+}
+
+/* --- Quick Actions --- */
+.quick-actions {
+  text-align: center;
+}
+
+.quick-actions h2 {
+  color: #1e227a;
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* --- Search Forms --- */
+.search-forms {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  max-width: 600px;
+}
+
+.search-form {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+}
+
+.search-form h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #1e227a;
+}
+
+.search-form .form-group {
+  display: flex;
+  gap: 15px;
+}
+
+.form-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #1e227a;
+}
+
+/* --- Data Layouts (For User/Account/Transaction details) --- */
+.detail-card {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 4px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 30px;
+}
+
+.detail-row {
+  display: flex;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.detail-row .label {
+  flex: 0 0 150px;
+  font-weight: 700;
+  color: #333;
+}
+
+.detail-row .value {
+  font-weight: 500;
+  color: #555;
+}

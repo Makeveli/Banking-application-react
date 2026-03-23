@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6fb;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: #1c2a8a;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1, h2, h3 {
+  margin: 0 0 12px 0;
+}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { apiService } from "../services/api";
 import "./../styles/home.css";
 
@@ -12,8 +13,8 @@ export default function Home() {
           <p>Your secure and modern banking solution</p>
           {!isAuthenticated && (
             <div className="hero-buttons">
-              <a href="/register" className="btn btn-primary">Get Started</a>
-              <a href="/login" className="btn btn-secondary">Login</a>
+              <Link to="/register" className="btn btn-primary">Get Started</Link>
+              <Link to="/login" className="btn btn-secondary">Login</Link>
             </div>
           )}
         </div>

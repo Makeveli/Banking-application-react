@@ -1,20 +1,21 @@
+import { Link } from "react-router-dom";
 import "./../styles/footer.css";
 
-export default function Footer(){
-    return(
+export default function Footer() {
+    return (
         <footer className="footer">
-            <div className="footer-container">
-                <div className="footer-content">
+            <div className="container">
+                <div className="footer-grid">
                     <div className="footer-section">
                         <h3>Bharat Bank</h3>
-                        <p>Secure banking for the modern world.</p>
+                        <p>Providing secure and modern banking solutions for everyone.</p>
                     </div>
                     <div className="footer-section">
-                        <h4>Quick Links</h4>
+                        <h3>Quick Links</h3>
                         <ul>
-                            <li><a href="/home">Home</a></li>
-                            <li><a href="/home">About</a></li>
-                            <li><a href="/home">Contact</a></li>
+                            <li><Link to="/home">Home</Link></li>
+                            <li><Link to="/home">About</Link></li>
+                            <li><Link to="/home">Contact</Link></li>
                         </ul>
                     </div>
                     <div className="footer-section">

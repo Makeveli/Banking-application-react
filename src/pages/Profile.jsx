@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import { apiService } from "../services/api";
 import "./../styles/profile.css";
 
@@ -103,7 +104,7 @@ export default function Profile() {
     <div className="profile-container">
       <div className="profile-header">
         <h1>My Profile</h1>
-        <a href="/update-profile" className="btn btn-primary">Change Password</a>
+        <Link to="/update-profile" className="btn btn-primary">Change Password</Link>
       </div>
       {error && <div className="error-message">{error}</div>}
       {success && <div className="success-message">{success}</div>}

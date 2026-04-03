@@ -1,21 +1,24 @@
-import {Navigate, useLocation} from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import { apiService } from "./api";
-import { Component } from "react";
 
-export const CustomerRoute = ({element:Component})=>{
+export const CustomerRoute = ({ element }) => {
     const location = useLocation();
-    return apiService.isCustomer() ? {
-        Component
-    }:(
-        <Navigate to ="/login" replace state ={{from: location}}/>
-    )
-}
+    
+    // Just return the element directly! No curly braces around it.
+    return apiService.isCustomer() ? (
+        element
+    ) : (
+        <Navigate to="/login" replace state={{ from: location }} />
+    );
+};
 
-export const AuditorRoute = ({element:Component})=>{
+export const AuditorRoute = ({ element }) => {
     const location = useLocation();
+    
+    // Just return the element directly!
     return apiService.isAuditor() || apiService.isAdmin() ? (
-        Component
-    ):(
-        <Navigate to="/login" replace state={{from: location}}/>
-    )
-}
+        element
+    ) : (
+        <Navigate to="/login" replace state={{ from: location }} />
+    );
+};

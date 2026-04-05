@@ -1,7 +1,7 @@
 import { configure } from "@testing-library/react";
 import axios from "axios";
 
-const API_BASE_URL = "http://3.109.4.80:80/api";
+const API_BASE_URL = "http://localhost:8090/api";
 
 //Create axios instance
 const api = axios.create(
